@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akviks Corner | Gift Boxes</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      background: #fff7fb;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #ff4f81;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #ffd1df, #fff0f5);
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      color: #e83268;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff4f81;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #e83268;
+    }
+
+    /* PRODUCTS */
+    .products {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .products h2 {
+      font-size: 38px;
+      color: #e83268;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .product {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-image {
+      height: 280px;
+      background: linear-gradient(135deg, #ffc1d6, #ffe8f0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+    }
+
+    .product-content {
+      padding: 25px;
+    }
+
+    .product h3 {
+      font-size: 25px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 30px;
+      color: #ff3f76;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .product p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 70px 8%;
+      background: #fff;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #e83268;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 70px 8%;
+      text-align: center;
+      background: #ffe5ee;
+    }
+
+    .contact h2 {
+      color: #e83268;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #ff4f81;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      nav {
+        padding: 15px 5%;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero h2 {
+        font-size: 23px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">🎁 Akviks Corner</div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#gifts">Gift Boxes</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>🎁 Akviks Corner</h1>
+      <h2>Beautiful Gifts for Every Special Moment</h2>
+      <p>Surprise your loved ones with our lovely gift boxes.</p>
+      <a href="#gifts" class="btn">Shop Gift Boxes</a>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="gifts">
+    <h2>Our Gift Boxes 💝</h2>
+
+    <div class="product-grid">
+
+      <!-- ₹499 BOX -->
+      <div class="product">
+        <div class="product-image">
+          🎀🎁
+        </div>
+
+        <div class="product-content">
+          <h3>₹499 Gift Box</h3>
+
+          <div class="price">₹499</div>
+
+          <p>
+            A cute and affordable gift box,
+            perfect for birthdays, friendship,
+            anniversaries and special occasions.
+          </p>
+
+          <button class="btn" onclick="order('₹499 Gift Box')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- ₹699 BOX -->
+      <div class="product">
+        <div class="product-image">
+          🎁💖
+        </div>
+
+        <div class="product-content">
+          <h3>₹699 Premium Gift Box</h3>
+
+          <div class="price">₹699</div>
+
+          <p>
+            A premium surprise gift box made
+            for someone special. Perfect for
+            memorable celebrations.
+          </p>
+
+          <button class="btn" onclick="order('₹699 Premium Gift Box')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Akviks Corner</h2>
+
+    <p>
+      Welcome to Akviks Corner! 💕
+      We create beautiful and thoughtful gift boxes
+      that make your special moments even more memorable.
+      Choose from our ₹499 and ₹699 gift boxes and
+      surprise someone you love.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Us 💌</h2>
+
+    <p>📱 WhatsApp: Add your number here</p>
+    <p>📧 Email: Add your email here</p>
+
+    <br>
+
+    <a href="#" class="btn">Chat on WhatsApp</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Akviks Corner | Made with ❤️</p>
+  </footer>
+
+  <script>
+    function order(product) {
+      alert(
+        "Thank you for choosing Akviks Corner! 🎁\n\n" +
+        "You selected: " + product +
+        "\n\nPlease add your WhatsApp number to enable direct ordering."
+      );
+    }
+  </script>
+
+</body>
+</html>
